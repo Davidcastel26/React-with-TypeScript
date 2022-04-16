@@ -14,7 +14,8 @@ const Timer = ({miliseconds}:TimeArgs) => {
   useEffect(() => {
     // console.log('useEfect');
 
-    ref.current = setInterval(() => setSeconds( s => s + 1), 1000 );
+    ref.current && clearInterval(ref.current );
+    ref.current = setInterval(() => setSeconds( s => s + 1), miliseconds );
 
   },[miliseconds])
 
