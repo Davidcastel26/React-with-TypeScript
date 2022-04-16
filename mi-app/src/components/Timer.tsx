@@ -1,7 +1,17 @@
+import { useEffect, useState } from "react"
 
 const Timer = () => {
+
+  const [seconds, setSeconds] = useState(0)
+
+  useEffect(() => {
+    setInterval(() => setSeconds( s => s + 1), 1000 );
+  },[])
+
   return (
-    <h4> Timer: <small>0</small></h4>
+    <>
+    <h4> Timer: <small>{seconds}</small></h4>
+    </>
   )
 }
 
