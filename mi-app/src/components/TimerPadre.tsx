@@ -1,10 +1,15 @@
-import Timer from "./Timer"
+import Timer from './Timer';
 
 const TimerPadre = () => {
   return (
     <>
       <span>Miliseguntods { 1000 } </span>
-      <Timer/> 
+
+      <br />
+      <button className="btn btn-outline-success">
+        1000
+      </button>
+      <Timer />
     </>
   )
 }
