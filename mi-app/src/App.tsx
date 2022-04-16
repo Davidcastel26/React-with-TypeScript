@@ -1,3 +1,4 @@
+import ContadorRed from "./components/ContadorRed";
 import Counter from "./components/Counter";
 import TimerPadre from "./components/TimerPadre";
 
@@ -9,6 +10,10 @@ function App() {
       <h1 className="mt-4"> React + TS!</h1>
       <hr />
       
+      <h2> useReducer</h2>
+      <hr />
+      <ContadorRed/>
+
       <h2> useState</h2>
       <hr />
       <User />
