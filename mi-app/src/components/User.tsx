@@ -32,9 +32,9 @@ const User = () => {
       </button>
 
       {!user ? (
-        <pre> There is not such user here, it should be in other part tho!</pre>
+        <pre className="mt-4"> There is not such user here, it should be in other part tho!</pre>
       ) : (
-        <pre> {JSON.stringify(user)} </pre>
+        <pre className="mt-4"> {JSON.stringify(user)} </pre>
       )}
     </div>
   );
