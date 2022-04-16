@@ -22,7 +22,7 @@ const TimerPadre = () => {
       >
         2000
       </button>
-      <Timer miliseconds={milliseconds}/>
+      <Timer milliseconds={milliseconds}/>
     </>
   )
 }

@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react"
 
 type TimeArgs = {
-  miliseconds: number
+  milliseconds: number
 }
  
-const Timer = ({miliseconds}:TimeArgs) => {
+const Timer = ({milliseconds}:TimeArgs) => {
 
   const [seconds, setSeconds] = useState(0)
   const ref = useRef<NodeJS.Timeout>();
@@ -15,9 +15,9 @@ const Timer = ({miliseconds}:TimeArgs) => {
     // console.log('useEfect');
 
     ref.current && clearInterval(ref.current );
-    ref.current = setInterval(() => setSeconds( s => s + 1), miliseconds );
+    ref.current = setInterval(() => setSeconds( s => s + 1), milliseconds );
 
-  },[miliseconds])
+  },[milliseconds])
 
   return (
     <>
