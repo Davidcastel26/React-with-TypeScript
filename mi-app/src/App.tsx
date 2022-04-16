@@ -8,10 +8,11 @@ function App() {
       <hr />
       
       <h2> useState</h2>
+      <hr />
       <User />
       <Counter />
 
-      <h2>useEffect - useRef</h2>
+      <h2 className="mt-5">useEffect - useRef</h2>
       <hr />
       
     </>
