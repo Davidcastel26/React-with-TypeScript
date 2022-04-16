@@ -7,7 +7,7 @@ const TimerPadre = () => {
     
   return (
     <>
-      <span>Miliseguntods { 1000 } </span>
+      <span>Miliseguntods { milliseconds } </span>
 
       <br />
       <button 
