@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const Timer = () => {
+const Timer = (millisec:any) => {
 
   const [seconds, setSeconds] = useState(0)
 
